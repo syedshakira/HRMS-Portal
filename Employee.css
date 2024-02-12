@@ -1,0 +1,52 @@
+
+/* Employee list */
+.empList{
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    top: 20vh;
+    margin: 15px;
+    width: 98%;
+    height: 60vh;
+    background: rgb(210, 235, 242);
+    box-shadow: 5px 5px 20px;
+    border-radius: 10px;
+  }
+  .empList label{
+    position: relative;
+    font-size: 20px;
+    top: -20px;
+    left: 50px;
+  }
+  .empList i{
+    position: relative;
+    left: 30px;
+    top: -20px;
+    font-size: 20px;
+  }
+  .btn-Emp{
+    position: relative;
+    top: 30px;
+    left: 30px;
+    width: 100px;
+    height: 40px;
+    background: rgb(26, 110, 237);
+    color: whitesmoke;
+  }
+  
+  .Table-emp{
+    position: relative;
+    left: 30px;
+    top: 30px;
+    border-collapse: collapse;
+  }
+  .Table-emp td{
+    padding: 20px 80px 20px 20px;
+    border: 1px solid black;
+  }
+  .Table-emp tr{
+    border: 1px solid black;
+  }
+  .atag{
+    font-size: 30px;
+  }
+  

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="AdminDashBoard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    
+</head>
+<body>
+    <nav class="sidebar">
+      <div id="logoComp">   
+        <img src="Logo1.jpg" >
+    </div>
+
+      <div class="menu-content">
+        <ul class="menu-items">
+          <div class="menu-title">Dashboard</div>
+
+          <li class="item">
+            <a href="Clients.html">Clients</a>
+          </li>
+
+          <li class="item">
+            <a href="Project.html">Project</a>
+          </li>
+          <li class="item">
+            <div class="submenu-item">
+              <span>Employees</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <ul class="menu-items submenu">
+              <div class="menu-title">
+                <i class="fa-solid fa-chevron-left"></i>
+                Details
+              </div>
+              <li class="item">
+                <a href="#">Add Employee</a>
+              </li>
+              <li class="item">
+                <a href="#">Remove Employee</a>
+              </li>
+              <li class="item">
+                <a href="#">Assign Task</a>
+              </li>
+              <li class="item">
+                <a href="#">Payroll</a>
+              </li>
+              <li class="item">
+                <a href="#">Accounts</a>
+              </li>
+              <li class="item">
+                <a href="#">Teams</a>
+              </li>
+              <li class="item">
+                <a href="#">Attendance</a>
+              </li>
+              <li class="item">
+                <a href="#">Leave Management</a>
+              </li>
+              <li class="item">
+                <a href="#">Awards</a>
+              </li>
+              <li class="item">
+                <a href="#">Update Members</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="item">
+            <a href="Reports.html">Reports</a>
+          </li>
+
+          <li class="item">
+            <a href="Settings.html">Settings</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="navbar">
+      <i class="fa-solid fa-bars" id="sidebar-close"></i>
+      <label> &nbsp; &nbsp; &nbsp;UNIS Technosoft </label>
+      <i class="fa-solid fa-bell" id="bell"></i>
+      <div class="onlineMemb">
+        <div class="onlineUser">
+            <div class="online" style="background-color: rgb(7, 82, 7);"><label>P</label></div>
+        </div>
+    </div>
+    </nav>
+
+    <main class="main">
+      
+  </main>
+    <script>
+        const sidebar = document.querySelector(".sidebar");
+const sidebarClose = document.querySelector("#sidebar-close");
+const menu = document.querySelector(".menu-content");
+const menuItems = document.querySelectorAll(".submenu-item");
+const subMenuTitles = document.querySelectorAll(".submenu .menu-title");
+
+sidebarClose.addEventListener("click", () => sidebar.classList.toggle("close"));
+
+menuItems.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    menu.classList.add("submenu-active");
+    item.classList.add("show-submenu");
+    menuItems.forEach((item2, index2) => {
+      if (index !== index2) {
+        item2.classList.remove("show-submenu");
+      }
+    });
+  });
+});
+
+subMenuTitles.forEach((title) => {
+  title.addEventListener("click", () => {
+    menu.classList.remove("submenu-active");
+  });
+});
+    </script>
+  </body>
+  </html>
