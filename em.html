@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="em.css" />
+<title>Admin Dashboard</title>
+</head>
+<body>
+
+<!-- Admin Dashboard -->
+<div class="dashboard" id="adminDashboard">
+    <h2>Admin Dashboard</h2>
+    <textarea id="adminMessage" placeholder="Type your message..."></textarea>
+    <button onclick="sendMessage()">Send Message to Employees</button>
+</div>
+
+<!-- Employee Dashboard -->
+<div class="dashboard" id="employeeDashboard">
+    <h2>Employee Dashboard</h2>
+    <div id="employeeMessages"></div>
+</div>
+<script src="em.js"></script>
+</body>
+</html>
